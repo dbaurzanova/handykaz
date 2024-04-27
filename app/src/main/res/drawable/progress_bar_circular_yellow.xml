@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:shape="ring"
+            android:thicknessRatio="2.2"
+            android:innerRadius="0dp"
+            android:useLevel="false">
+            <solid android:color="@color/main_tranc_white"/>
+        </shape>
+    </item>
+    <item>
+        <shape
+            android:shape="ring"
+            android:thicknessRatio="2.8"
+            android:innerRadius="0dp"
+            android:useLevel="false">
+            <solid android:color="@color/main_tranc_white"/>
+        </shape>
+    </item>
+    <item>
+        <shape
+            android:shape="ring"
+            android:thicknessRatio="3.8"
+            android:innerRadius="0dp"
+            android:useLevel="false">
+            <solid android:color="@color/main_gray_progress"/>
+        </shape>
+    </item>
+    <item>
+        <rotate
+            android:fromDegrees="-90"
+            android:toDegrees="-90">
+            <shape
+                android:shape="ring"
+                android:thicknessRatio="26"
+                android:innerRadius="24dp"
+                android:useLevel="true">
+                <solid android:color="@color/main_yellow"/>
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_gray_progress"
+    tools:context=".AbcFragment">
+
+    <View
+        android:id="@+id/backgroundView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/content_purple_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/content_white_background"
+        android:paddingVertical="50dp"
+        android:text="Әліппе жаттау"
+        android:textAlignment="center"
+        android:textColor="@color/main_black_text"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBarCircular"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="30dp"
+        android:indeterminateOnly="false"
+        android:progressDrawable="@drawable/progress_bar_circular_yellow"
+        android:progress="55"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/progressBarText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3/5"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarCircular"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarCircular"
+        app:layout_constraintStart_toStartOf="@+id/progressBarCircular"
+        app:layout_constraintTop_toTopOf="@+id/progressBarCircular" />
+
+    <Button
+        android:id="@+id/goToAbcLearning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/abc_item"
+        android:textSize="18sp"
+        android:textColor="@color/main_black_text"
+        android:textAllCaps="false"
+        android:textAlignment="textStart"
+        android:drawableEnd="@drawable/button_image_abc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backgroundView" />
+
+    <Button
+        android:id="@+id/goToAbcCheckYourself"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:backgroundTint="@color/white"
+        android:drawableEnd="@drawable/button_image_check"
+        android:text="@string/check_yourself"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/main_black_text"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goToAbcLearning" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

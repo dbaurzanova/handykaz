@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/content_white_background"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/trash"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/textViewCongrats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Расымен аккаунтты өшіргіңіз \nкеледі ме?"
+        android:textAlignment="center"
+        android:layout_marginBottom="15dp"
+        android:textSize="18sp"
+        android:textColor="@color/main_black_text"/>
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Өшіру"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:textColor="@color/main_black_text"
+        android:background="@drawable/purple_btn_background"/>
+
+    <Button
+        android:id="@+id/notDeleteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Болдырмау"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:textColor="@color/main_black_text"
+        android:background="#00000000"/>
+
+</LinearLayout>

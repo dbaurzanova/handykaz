@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">HandyKaz</string>
+
+    // Headings
+    <string name="heading_one">Ымдау тілінің әлеміне қош келдіңіз!</string>
+    <string name="well_done">Жарайсың!</string>
+    <string name="check_yourself">Өзіңді тексер</string>
+    <string name="learned">Жатталды</string>
+    <string name="scores">Баллдар</string>
+
+    // Description
+    <string name="desc_one">Біздің сабақтарымыз сізге қазақ ымдау тілін оңай және мақсатты меңгеру көмек көрсетеді.</string>
+    <string name="desc_two">Тіл мастерлігінің жаңа деңгейлерін ашып, біздің қолданбамен арқылы жеттер күлгісін таныңыз!</string>
+    <string name="desc_check_image">Суретте не бейнеленген?</string>
+
+
+    // Buttons
+    <string name="next_btn">Әріқарай</string>
+    <string name="skip_btn">Өткізіп жіберу</string>
+    <string name="sign_in_btn">Кіру</string>
+    <string name="sign_up_btn">Тіркелу</string>
+    <string name="check_btn">Тексеру</string>
+    <string name="finish_btn">Бітіру</string>
+    <string name="play_btn">Ойнау</string>
+    <string name="close_btn">Жабу</string>
+
+    // Bottom Navigation
+    <string name="abc_item">Әліппе</string>
+    <string name="video_less_item">Видео-сабақ</string>
+    <string name="games_item">Ойындар</string>
+    <string name="profile_item">Профиль</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

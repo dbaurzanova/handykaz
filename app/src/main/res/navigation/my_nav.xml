@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.handykaz.fragments.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_authorizationFragment"
+            app:destination="@id/authorizationFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.example.handykaz.onboarding.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" >
+        <action
+            android:id="@+id/action_viewPagerFragment_to_authorizationFragment"
+            app:destination="@id/authorizationFragment"
+            app:popUpTo="@id/viewPagerFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/authorizationFragment"
+        android:name="com.example.handykaz.authorization.AuthorizationFragment"
+        android:label="fragment_authorization"
+        tools:layout="@layout/fragment_authorization" >
+        <action
+            android:id="@+id/action_authorizationFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"
+            app:popUpTo="@id/authorizationFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_authorizationFragment_to_signInFragment"
+            app:destination="@id/signInFragment"
+            app:popUpTo="@id/authorizationFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.handykaz.authorization.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_signInFragment"
+            app:destination="@id/signInFragment"
+            app:popUpTo="@id/signUpFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_signUpFragment_to_abcFragment"
+            app:destination="@id/abcFragment"
+            app:popUpTo="@id/signUpFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.handykaz.authorization.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"
+            app:popUpTo="@id/signInFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_signInFragment_to_abcFragment"
+            app:destination="@id/abcFragment"
+            app:popUpTo="@id/signInFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/abcFragment"
+        android:name="com.example.handykaz.AbcFragment"
+        android:label="fragment_abc"
+        tools:layout="@layout/fragment_abc" >
+        <action
+            android:id="@+id/action_abcFragment_to_abcLearningFragment"
+            app:destination="@id/abcLearningFragment" />
+        <action
+            android:id="@+id/action_abcFragment_to_abcCheckYourselfFragment"
+            app:destination="@id/abcCheckYourselfFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoLessonsFragment"
+        android:name="com.example.handykaz.VideoLessonsFragment"
+        android:label="fragment_video_lessons"
+        tools:layout="@layout/fragment_video_lessons" >
+        <action
+            android:id="@+id/action_videoLessonsFragment_to_eachVideoLessonFragment"
+            app:destination="@id/eachVideoLessonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gamesFragment"
+        android:name="com.example.handykaz.GamesFragment"
+        android:label="fragment_games"
+        tools:layout="@layout/fragment_games" >
+        <action
+            android:id="@+id/action_gamesFragment_to_cameraGameFragment"
+            app:destination="@id/cameraGameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.handykaz.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_profileSettingsFragment"
+            app:destination="@id/profileSettingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/abcLearningFragment"
+        android:name="com.example.handykaz.AbcLearningFragment"
+        android:label="fragment_abc_learning"
+        tools:layout="@layout/fragment_abc_learning" >
+        <action
+            android:id="@+id/action_abcLearningFragment_to_abcLearningEndAnimationFragment"
+            app:destination="@id/abcLearningEndAnimationFragment"
+            app:popUpTo="@id/abcLearningFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/abcCheckYourselfFragment"
+        android:name="com.example.handykaz.AbcCheckYourselfFragment"
+        android:label="fragment_abc_check_yourself"
+        tools:layout="@layout/fragment_abc_check_yourself" >
+        <action
+            android:id="@+id/action_abcCheckYourselfFragment_to_checkYourselfEndAnimationFragment"
+            app:destination="@id/checkYourselfEndAnimationFragment"
+            app:popUpTo="@id/abcCheckYourselfFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/eachVideoLessonFragment"
+        android:name="com.example.handykaz.EachVideoLessonFragment"
+        android:label="fragment_each_video_lesson"
+        tools:layout="@layout/fragment_each_video_lesson" />
+    <fragment
+        android:id="@+id/abcLearningEndAnimationFragment"
+        android:name="com.example.handykaz.AbcLearningEndAnimationFragment"
+        android:label="fragment_abc_learning_end_animation"
+        tools:layout="@layout/fragment_abc_learning_end_animation" >
+        <action
+            android:id="@+id/action_abcLearningEndAnimationFragment_to_abcFragment"
+            app:destination="@id/abcFragment"
+            app:popUpTo="@id/abcLearningEndAnimationFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/cameraGameFragment"
+        android:name="com.example.handykaz.CameraGameFragment"
+        android:label="fragment_camera_game"
+        tools:layout="@layout/fragment_camera_game" >
+        <action
+            android:id="@+id/action_cameraGameFragment_to_gameEndAnimationFragment"
+            app:destination="@id/gameEndAnimationFragment"
+            app:popUpTo="@id/cameraGameFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkYourselfEndAnimationFragment"
+        android:name="com.example.handykaz.CheckYourselfEndAnimationFragment"
+        android:label="fragment_check_yourself_end_animation"
+        tools:layout="@layout/fragment_check_yourself_end_animation" >
+        <action
+            android:id="@+id/action_checkYourselfEndAnimationFragment_to_abcFragment"
+            app:destination="@id/abcFragment" />
+        <argument
+            android:name="score"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameEndAnimationFragment"
+        android:name="com.example.handykaz.GameEndAnimationFragment"
+        android:label="fragment_game_end_animation"
+        tools:layout="@layout/fragment_game_end_animation" >
+        <action
+            android:id="@+id/action_gameEndAnimationFragment_to_gamesFragment"
+            app:destination="@id/gamesFragment" />
+        <argument
+            android:name="score"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileSettingsFragment"
+        android:name="com.example.handykaz.ProfileSettingsFragment"
+        android:label="fragment_profile_settings"
+        tools:layout="@layout/fragment_profile_settings" >
+        <action
+            android:id="@+id/action_profileSettingsFragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.example.handykaz.ChangePasswordFragment"
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" />
+</navigation>
